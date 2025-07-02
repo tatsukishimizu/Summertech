@@ -9,4 +9,4 @@ def binarysearch(start,end,list,target):
         if target < list[midpoint]:
             return binarysearch(start, midpoint -  1, list, target)
 sample = [2,5,7,9,17]
-print(binarysearch(0,len(sample), sample, 17))    s
+print(binarysearch(0,len(sample), sample, 17))    
