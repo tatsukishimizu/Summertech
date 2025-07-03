@@ -10,8 +10,8 @@ while True:
     print("---------")
     print(board[2][0] + " | " + board[2][1] + " | " + board[2][2])
     print("Player " + player)
-    x = int(input("What is your x coordinate?"))
-    y = int(input("What is your y coordinate?"))
+    x = int(input("What is your row?"))
+    y = int(input("What is your column"))
     if x > 2:
         print("Invalid move")
         continue

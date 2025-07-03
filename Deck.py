@@ -10,7 +10,7 @@ class Deck:
             self.deck.append(Card(i,"Diamond"))
     def shuffle(self):
         for i in range(len(self.deck)):
-            x =randint(len(self.deck))
+            x =randint(0,len(self.deck) - 1)
             y = self.deck[x]
             self.deck[x] = self.deck[i]
             self.deck[i] = y

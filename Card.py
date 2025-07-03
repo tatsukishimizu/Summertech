@@ -17,6 +17,4 @@ class Card:
 
 
 
-x = Card(7,"Club")
-print(x)
     
