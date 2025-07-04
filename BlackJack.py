@@ -1,4 +1,5 @@
 from Deck import Deck
+from Face import face
 from Card import Card
 def sum(list):
     counter = 0
@@ -45,14 +46,7 @@ while True:
     printhand(dealerhand)
     if sum(playerhand) == 21:
         print("You got BlackJack!!")
-        print("                             OOOOOO           000000")
-        print("                             OOOOOO           000000")
-        print("                             OOOOOO           000000")
-        print("                                                             ")
-        print("                                                             ")
-        print("                              ii                  ii")
-        print("                               ii                ii")
-        print("                                 iiiiiiiiiiiiiiii")
+        face
     if sum(dealerhand) == 21:
         print("The Dealer got Black Jack!!")
     if sum(playerhand) > 21:
@@ -62,17 +56,16 @@ while True:
     else:
         if sum(playerhand) > sum(dealerhand):
             print("You win!")
-            print("                             OOOOOO           000000")
-            print("                             OOOOOO           000000")
-            print("                             OOOOOO           000000")
-            print("                                                             ")
-            print("                                                             ")
-            print("                              ii                  ii")
-            print("                               ii                ii")
-            print("                                 iiiiiiiiiiiiiiii")
-        elif sum(dealerhand) > sum(dealerhand):
+            face
+        elif sum(dealerhand) > sum(playerhand):
             print("The dealer wins")
+        else:
+            print("Tie")
+    s = input("Do you want to play another game?")
 
-    
+    if s == "no":
+        break
+    if s == "yes":
+        d = Deck()
+        d.shuffle()
 
- 
